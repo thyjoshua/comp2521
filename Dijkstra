@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Graph.h"
+#include "PQ.h"
+#include "Dijkstra.h"
+
+dijkstraSSSP(G,source):
+|  Input graph G, source node
+|
+|  initialise dist[] to all ∞, except dist[source]=0
+|  initialise pred[] to all -1
+|  vSet=all vertices of G
+|  while vSet≠∅ do
+|  |  find s∈vSet with minimum dist[s]
+|  |  for each (s,t,w)∈edges(G) do
+|  |     relax along (s,t,w)
+|  |  end for
+|  |  vSet=vSet\{s}
+|  end while
+
+ShortestPaths dijkstra(Graph, Vertex) {
+	PredNode *pred = malloc(sizeof(PredNode));
+	
+}
